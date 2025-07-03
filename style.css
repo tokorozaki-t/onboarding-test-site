@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #fff; /* 全体の文字色を白に設定 */
+    overflow-x: hidden; /* 横スクロールバーを非表示に */
+}
+
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('sakura.webp'); /* ここを修正しました */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ヘッダー */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* 上下左右のパディング */
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-left: 20px; /* 左側に少しスペース */
+}
+
+.logo p {
+    margin: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ddd;
+}
+
+.language-selector {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.language-selector span {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.language-selector span:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none; /* デスクトップでは非表示、モバイルで表示 */
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* メインコンテンツ */
+.main-content {
+    flex-grow: 1; /* 残りのスペースを埋める */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content h1 {
+    font-size: 3.5em; /* フォントサイズを調整 */
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字の影 */
+}
+
+/* スクロールインジケーター */
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(90deg); /* 縦書きにする */
+    transform-origin: bottom right;
+    color: #fff;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .nav-menu, .language-selector {
+        display: none; /* ナビメニューと言語セレクターを非表示 */
+    }
+
+    .menu-icon {
+        display: flex; /* ハンバーガーメニューを表示 */
+    }
+
+    .main-content h1 {
+        font-size: 2.5em; /* 小さい画面でのフォントサイズ調整 */
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+}
