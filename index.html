@@ -3,42 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webサイトタイトル</title>
+    <title>桜の紹介 - 心を育む会</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero-section">
-        <header class="header">
-            <div class="logo">
-                <p>果</p>
-                <p>実</p>
-                <p>の</p>
-                <p>力</p>
-                <p>について</p>
-            </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#">ホーム</a></li>
-                    <li><a href="#">サービス</a></li>
-                    <li><a href="#">会社概要</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                </ul>
-            </nav>
-            <div class="language-selector">
-                <span>日本語</span> | <span>English</span> | <span>中文</span>
-            </div>
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </header>
+    <header class="site-header">
+        <h1>読書を通じて健やかな心を育む会</h1>
+        <p class="site-description">〜 廻る廻るよ輪廻が廻る 読んだ数だけ読めば効く 〜</p>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">漫画（マンガ）</a></li>
+                <li><a href="#">科学</a></li>
+                <li><a href="#">小説</a></li>
+                <li><a href="#">ビジネス書</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
         <main class="main-content">
-            <h1>果実を、薬実。</h1>
+            <article class="article-detail">
+                <div class="breadcrumbs">
+                    <span>ホーム</span> &gt; <span>桜（さくら）</span>
+                </div>
+
+                <h1 class="entry-title">桜</h1>
+
+                <div class="entry-content">
+                    <p>桜は、日本を象徴する花として広く知られています。春の訪れとともに、美しいピンクや白の花を咲かせ、多くの人々を魅了します。その儚くも力強い美しさは、古くから詩歌や絵画の題材とされ、日本の文化や精神性に深く根付いています。</p>
+                    <p>特に、満開の桜並木は圧巻で、多くの花見客で賑わいます。花びらが風に舞う「桜吹雪」は、日本の春の風物詩として親しまれています。桜の種類も豊富で、ソメイヨシノ、ヤマザクラ、シダレザクラなど、地域や時期によって異なる表情を見せてくれます。</p>
+                    <p>桜は、単に美しいだけでなく、生命の循環や移ろいゆく時の流れを感じさせる花でもあります。短い開花期間ゆえに、その美しさがより一層際立ち、私たちに深い感動を与えてくれます。</p>
+
+                    <img src="sakura.webp" alt="満開の桜の木々と青空" class="alignnone size-full thumbnail-image">
+
+                    <p>桜の花言葉には「優美」「精神の美」などがあり、その姿にふさわしい意味が込められています。春には、ぜひ各地の桜の名所を訪れ、その息をのむような美しさを肌で感じてみてください。</p>
+                </div>
+            </article>
         </main>
-        <div class="scroll-indicator">
-            <p>SCROLL</p>
-        </div>
+
+        <aside class="sidebar">
+            <div class="banner-area">
+                <p>広告バナー</p>
+                <img src="https://via.placeholder.com/300x250?text=AD+Banner" alt="広告バナー" class="ad-banner">
+            </div>
+        </aside>
     </div>
+
 </body>
 </html>
